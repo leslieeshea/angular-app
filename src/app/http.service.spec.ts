@@ -9,11 +9,8 @@ describe('HttpService', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      imports: [HttpClientTestingModule], // this will simulate a real api call
-      providers: [
-        HttpService,
-
-      ]
+      imports: [ HttpClientTestingModule ], // this will simulate a real api call
+      providers: [ HttpService ]
     });
     service = TestBed.inject(HttpService);
     httpMock = TestBed.inject(HttpTestingController);
