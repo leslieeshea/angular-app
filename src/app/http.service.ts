@@ -5,10 +5,11 @@ import { HttpClient } from '@angular/common/http';
   providedIn: 'root'
 })
 export class HttpService {
+  url: string = 'https://api.openbrewerydb.org/breweries';
 
   constructor(private http: HttpClient) { }
 
   getBreweries() {
-    return this.http.get('https://api.openbrewerydb.org/breweries');
+    return this.http.get(this.url);
   }
 }
