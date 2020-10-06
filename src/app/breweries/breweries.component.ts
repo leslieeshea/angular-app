@@ -14,8 +14,7 @@ export class BreweriesComponent implements OnInit {
 
   ngOnInit() { // anything inside here runs when the component is loaded
     this.http.getBreweries().subscribe(data => {
-      this.breweries = data; // this will store the data pulled from the api get request and set it to the brews object
-      console.log(this.breweries);
+      this.breweries = data; // this will store the data pulled from the api get request and set it to the breweries object
     });
   }
 
